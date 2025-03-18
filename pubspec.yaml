@@ -1,6 +1,6 @@
 name: breezedb
 description: A lightweight and easy-to-use NoSQL database for Flutter and Dart, with support for SQLite and in-memory adapters.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/imatheus-lucas/breezeDB
 
 environment:
