@@ -1,7 +1,6 @@
 # BreezeDB: A Lightweight NoSQL Database for Flutter and Dart
 
-[![pub package](https://img.shields.io/pub/v/breezedb.svg)](https://pub.dev/packages/breezedb)
-[![Dart CI](https://github.com/your-github-username/breezedb/actions/workflows/dart.yml/badge.svg)](https://github.com/your-github-username/breezedb/actions/workflows/dart.yml) <!-- Replace with your GitHub Actions badge if you have CI -->
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **BreezeDB** is a simple, lightweight, and easy-to-use NoSQL database for Flutter and Dart applications. It's designed for scenarios where you need a local database solution without the complexity of setting up and managing a full-fledged database system. BreezeDB offers:
@@ -56,45 +55,33 @@ final db = BreezeDb(adapter: InMemoryAdapter()); // Create BreezeDb instance wit
 
 ## Core Concepts
 
-BreezeDb
+### BreezeDb
 
 The main class to interact with your database. It provides methods for:
 
-Setting and getting values, rows, and tables.
+*   Setting and getting values, rows, and tables.
+*   Deleting data.
+*   Querying data.
+*   Managing transactions.
+*   Adding listeners for reactive updates.
 
-Deleting data.
-
-Querying data.
-
-Managing transactions.
-
-Adding listeners for reactive updates.
-
-
-BreezeDbAdapter
+### BreezeDbAdapter
 
 An abstract class defining the interface for storage adapters. You can implement your own adapters if needed. BreezeDb comes with two built-in adapters:
 
-InMemoryAdapter: Stores data in memory. Fast but non-persistent.
+*   InMemoryAdapter: Stores data in memory. Fast but non-persistent.
+*   SqliteAdapter: Stores data persistently using SQLite.
 
-SqliteAdapter: Stores data persistently using SQLite.
-
-
-Condition
+### Condition
 
 An abstract class representing a condition for filtering data in queries. BreezeDb provides several built-in condition classes:
 
-*Eq: Equal to (==)
-
-*Ne: Not equal to (!=)
-
-*Gt: Greater than (>)
-
-*Lt: Less than (<)
-
-*And: Logical AND (&&)
-
-*Or: Logical OR (||)
+*   **Eq**: Equal to (==)
+*   **Ne**: Not equal to (!=)
+*   **Gt**: Greater than (>)
+*   **Lt**: Less than (<)
+*   **And**: Logical AND (&&)
+*   **Or**: Logical OR (||)
 
 
 ## Usage Examples
@@ -276,10 +263,6 @@ try {
 ## Conclusion
 BreezeDB offers a straightforward and efficient way to manage local data in Flutter and Dart applications. Its simple API, adapter-based architecture, query builder, and reactivity features make it a valuable tool for various use cases.
 
-For more detailed API documentation, please refer to the generated Dartdoc documentation (if available, e.g., on pub.dev or generated locally).
-
-Contributions are welcome! If you find issues or have suggestions for improvements, please feel free to open issues or pull requests on the GitHub repository. <!-- Replace with your repo URL -->
+Contributions are welcome! If you find issues or have suggestions for improvements, please feel free to open issues or pull requests on the GitHub repository. 
 
 License: MIT License
-
-This documentation provides a comprehensive overview of your tidydb library. Remember to replace placeholders like repository URLs and version numbers with your actual information. You can save this content as README.md in the root of your project to be displayed on pub.dev and GitHub. You can also expand on this documentation and host it on a dedicated documentation website for more in-depth explanations and examples.
