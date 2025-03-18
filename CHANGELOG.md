@@ -10,3 +10,9 @@
 * Implements transactions for data integrity.
 * Includes a listener mechanism for reactive updates (especially useful in Flutter).
 * Basic condition classes for queries: `Eq`, `Ne`, `Gt`, `Lt`, `And`, `Or`.
+
+
+
+### 0.0.1 - Update documentation
+
+- Updated the documentation to reflect the latest changes in the library.
